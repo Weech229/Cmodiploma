@@ -66,4 +66,3 @@ Cmodiploma/
 
 ## Лицензия
 MIT
-```
