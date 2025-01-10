@@ -1,38 +1,68 @@
-# Cmodiploma
+```markdown
+# Система массового обслуживания (СМО)
 
-This template should help get you started developing with Vue 3 in Vite.
+Веб-приложение для моделирования и анализа систем массового обслуживания, разработанное с использованием современных веб-технологий.
 
-## Recommended IDE Setup
+## Функциональность
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Настройка параметров системы обслуживания:
+  - Количество серверов
+  - Максимальная длина очереди
+  - Интенсивность входящего потока
 
-## Customize configuration
+- Визуализация процесса обслуживания в реальном времени
+- Сбор и отображение статистики:
+  - Количество обслуженных клиентов
+  - Количество отказов
+  - Средняя загрузка серверов
+  - Среднее время ожидания
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Графическое представление результатов
+- Сохранение результатов симуляций
 
-## Project Setup
+## Технологии
 
-```sh
+### Frontend
+- Vue 3
+- Vue Router
+- Pinia
+- Chart.js
+
+### Backend
+- Node.js
+- Express
+- MongoDB
+
+## Установка и запуск
+
+### Frontend
+```bash
+cd Cmodiploma
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
+### Backend
+```bash
+cd server
+npm install
+npm run dev
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Структура проекта
 
-```sh
-npm run lint
 ```
-"# cmo" 
-"# Project" 
-"# Cmodiploma" 
+Cmodiploma/
+├── src/
+│   ├── components/     # Vue компоненты
+│   ├── views/          # Страницы приложения
+│   ├── stores/         # Хранилище состояния
+│   └── router/         # Маршрутизация
+├── server/
+│   ├── models/         # Модели данных
+│   ├── routes/         # API маршруты
+│   └── config/         # Конфигурация
+```
+
+## Лицензия
+MIT
